@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #d6ebeb;
+}
+
+h1 {
+  color: #092c16;
+  margin-top: 20px;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
+}
+
+#inputTask {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: azure;
+  color: orange;
+  font-size: 1rem;
+  resize: none;
+}
+
+#submit {
+  margin-top: 10px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #f3fa94;
+  color: black;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #f7d425;
+}
+
+#dailyTask {
+  margin-top: 20px;
+  width: 100%;
+  list-style-type: upper-roman;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.tasks {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.task-data {
+  flex: 1;
+  margin-right: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.task-data.completed {
+  text-decoration: line-through;
+}
+
+.task-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.fa-check-circle,
+.fa-pen-square,
+.fa-trash {
+  cursor: pointer;
+}
+
+.fa-check-circle:hover,
+.fa-pen-square:hover,
+.fa-trash:hover {
+  color: #f7d425;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+}
